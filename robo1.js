@@ -7,7 +7,7 @@ var bot = new TelegramBot(token, {polling: true});
 
 bot.onText(/\/start/, function(mes, m){
     var id = mes.chat.id;
-    user.checkUser(mes.chat);
+    user.setUser(mes.chat);
     setTimeout(function(){
         user.setCurrentQuestion(id);
         startGame(id);
@@ -76,6 +76,7 @@ bot.onText(/(Кивнуть)|(Покачать)/, function(mes, match){
 });
 
 bot.onText(/.*/, function(mes, match){
+    console.log(mes)
     var id = mes.chat.id;
     if (user.getCurrentQuestion(id) === 2) {
         bot.sendMessage(id, '<b>Какая-то баба:</b> Тупица, Тони, что это с ним?', {

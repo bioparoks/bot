@@ -4,7 +4,7 @@
 			{
 				"type": "text",
 				"speaker": null,
-				"text": "<b>Вы слышите странные звуки вокруг...</b>",
+				"text": "<b>Вы слышите странные{{user:name}} звуки {{emoji:heart}} вокруг{{emoji:thumbsdown}}{{emoji:heart}}...</b>",
 				"image": null,
 				"caption": null,
 				"delay": 6000,
@@ -25,7 +25,7 @@
 				"text": null,
 				"image": "./images/glazok.jpg",
 				"caption": "А вот и мы",
-				"delay": 2000,
+				"delay": 5000,
 				"pattern": null
 			},
 			{
@@ -34,7 +34,7 @@
 				"text": "Ты нас видишь? Кивни головой.",
 				"image": null,
 				"caption": null,
-				"delay": 0,
+				"delay": 1000,
 				"pattern": null
 			}
 		],
