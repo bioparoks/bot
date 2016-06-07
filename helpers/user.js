@@ -12,8 +12,8 @@ module.exports = {
                 age: null,
                 email: null,
                 progress: {
-                    mission: null,
-                    question: null
+                    mission: 0,
+                    question: 0
                 }
             });
             if (callback) callback(false);
@@ -73,7 +73,7 @@ module.exports = {
         return require(this.getCurrentUser(id).progress.mission);
     },
     setQuestion: function(id, question){
-        this.getCurrentUser(id).progress.question = question || null;
+        this.getCurrentUser(id).progress.question = question;
     },
     getQuestion: function(id){
         return this.getCurrentUser(id).progress.question;

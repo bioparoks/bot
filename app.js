@@ -4,7 +4,7 @@ var cheerio = require('cheerio');
 
 
 var user = require('./helpers/user.js');
-var text = require('./helpers/texts.js');
+var text = require('./helpers/patterns.js');
 var story = require('./helpers/stories.js');
 
 var token = '222233302:AAEW3Kok7M5nqLS_i1e1nUIgxsczAm4e7sw';
