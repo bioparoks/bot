@@ -476,6 +476,6 @@ bot.onText(/.*/, function(mes, match){
                 parse_mode: 'HTML'
             });
         }, 5000);
-        
+
     }
 });
