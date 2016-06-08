@@ -4,7 +4,7 @@
 			{
 				"type": "text",
 				"speaker": null,
-				"text": "<b>Вы слышите странные{{user:name}} звуки {{emoji:heart}} вокруг{{emoji:thumbsdown}}{{emoji:heart}}...</b>",
+				"text": "Вы слышите странные звуки вокруг...",
 				"image": null,
 				"caption": null,
 				"delay": 6,
@@ -109,6 +109,15 @@
 			},
 			{
 				"type": "text",
+				"speaker": null,
+				"text": "Новый персонаж: {{char:tony}}",
+				"image": null,
+				"caption": null,
+				"delay": 3,
+				"pattern": null
+			},
+			{
+				"type": "text",
 				"speaker": "tony",
 				"text": "Странно, ты вроде что-то понятное сказал, но... наверное, перепутал языковой модуль, дай мне минуту",
 				"image": null,
@@ -138,7 +147,7 @@
 			{
 				"type": "text",
 				"speaker": "jane:anonymous",
-				"text": "Необычное имя для такого как ты… ну да ладно",
+				"text": "Это твое имя? Необычное... для такого как ты... ну да ладно",
 				"image": null,
 				"caption": null,
 				"delay": 3,
@@ -309,6 +318,15 @@
 			},
 			{
 				"type": "text",
+				"speaker": null,
+				"text": "Новый персонаж: {{char:jane}}",
+				"image": null,
+				"caption": null,
+				"delay": 2,
+				"pattern": null
+			},
+			{
+				"type": "text",
 				"speaker": "jane",
 				"text": "Давно не отхватывал? Не отвлекайся, инженеришка",
 				"image": null,
@@ -323,6 +341,15 @@
 				"image": null,
 				"caption": null,
 				"delay": 7,
+				"pattern": null
+			},
+			{
+				"type": "text",
+				"speaker": null,
+				"text": "Новый персонаж: {{char:charlie}}",
+				"image": null,
+				"caption": null,
+				"delay": 2,
 				"pattern": null
 			},
 			{

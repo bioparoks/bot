@@ -11,11 +11,16 @@ module.exports = {
                 sex: null,
                 age: null,
                 email: null,
+                typing: false,
                 progress: {
                     mission: 0,
                     question: 0
                 }
             });
+
+            //TODO: remove this console.log
+            console.log(users[users.length - 1]);
+
             if (callback) callback(false);
             return 0;
         } else {
@@ -77,6 +82,12 @@ module.exports = {
     },
     getQuestion: function(id){
         return this.getCurrentUser(id).progress.question;
+    },
+    setTyping: function(id, typing){
+        this.getCurrentUser(id).typing = typing;
+    },
+    getTyping: function(id){
+        return this.getCurrentUser(id).typing;
     },
     getUserAttribute: function(id, attr){
         var attribute;

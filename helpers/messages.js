@@ -2,6 +2,12 @@ var async = require('async');
 var user = require('./user');
 var formatting = require('./text-helpers');
 
+function checkInputsOnUserData(id, text, input) {
+    if((new RegExp('Это твое имя?')).test(text)) {
+        user.setRoboName(id, input);
+    }
+}
+
 function messageConstructor(bot, id, messageBlock, input, answer) {
     if (Array.isArray(messageBlock)) {
         messageBlock = messageBlock.filter(function(mes){
@@ -17,40 +23,26 @@ function messageConstructor(bot, id, messageBlock, input, answer) {
         caption = messageBlock.caption,
         delay = messageBlock.delay * 1000; // converting to MS from SEC
 
-    if((new RegExp('как тебя зовут?')).test(text)) {
-        user.setRoboName(id, input);
-    }
+    checkInputsOnUserData(id, text, input);
 
     if (text){
         if (speaker !== null) {
-            var speakerTxt;
-            // TODO: вынести строки в отдельный файл
-            switch (speaker){
-                case 'tony':
-                    speakerTxt = '<b>{{emoji:construction_worker}}Тони</b>: ';
-                    break;
-                case 'jane':
-                    speakerTxt = '<b>{{emoji:woman}}Джейн</b>: ';
-                    break;
-                case 'charlie':
-                    speakerTxt = '<b>{{emoji:cop}}Чарли</b>: ';
-                    break;
-                default:
-                    speakerTxt = '<b>{{emoji:bust_in_silhouette}}Неизвестный</b>: ';
-            }
-
-            text = speakerTxt + text;
+            text = '<b>' + formatting.parseCharacter(speaker) + '</b>: ' + text;
+        } else {
+            text = '<b>' + text + '</b>';
         }
         text = formatting.parseCurlyBrackets(id, text);
     }
 
     if (!answer) {
+        user.setTyping(id, false);
         if (type === 'text') {
             bot.sendMessage(id, text, {parse_mode: 'HTML'});
         } else if (type === 'photo') {
             bot.sendPhoto(id, image, {caption: formatting.parseCurlyBrackets(id, caption)});
         }
     } else {
+        user.setTyping(id, true);
         if (type === 'text') {
             if (answer.choices !== null) {
                 var answers = [];
@@ -100,3 +92,4 @@ module.exports = {
     messageConstructor: messageConstructor,
     dialogBuilder: dialogBuilder
 };
+

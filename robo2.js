@@ -8,16 +8,32 @@ var bot = new TelegramBot(token, {polling: true});
 
 var request = require('request');
 
+bot.onText(/\/start/, function(mes, match){
+    var input = match[0];
+    var id = mes.chat.id;
+
+    user.setUser(mes.chat, function(userExists){
+        if (!userExists) {
+            user.setMission(id, 'prolog');
+        }
+        user.setQuestion(id, 0);
+        messagingModule.dialogBuilder(bot, id, input);
+    });
+
+});
+
 bot.onText(/.*/, function(mes, match){
     var input = match[0];
     var id = mes.chat.id;
-    if (/\/start/.test(input)) {
-        user.setUser(mes.chat, function(userExists){
-            if (!userExists) {
-                user.setMission(id, 'prolog');
-                user.setQuestion(id, 0);
+
+    if (!/\/start/.test(input)) {
+        if (user.getCurrentUser(id) && user.getQuestion(id) !== 0) {
+            if (user.getTyping(id)) {
+                messagingModule.dialogBuilder(bot, id, input);
             }
-        });
+        } else {
+            bot.sendMessage(id, 'Используй /start');
+        }
     }
 
     if (/\/emoji/.test(input)){
@@ -32,7 +48,4 @@ bot.onText(/.*/, function(mes, match){
         });
     }
 
-    if (!user.getCurrentUser(id)) bot.sendMessage(id, 'Please, use /start');
-    else messagingModule.dialogBuilder(bot, id, input);
-    
 });

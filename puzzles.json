@@ -1,0 +1,54 @@
+[
+	{
+		"title": "Title text",
+		"content": "The whole text of the puzzle (use \n for line breaks) and (') single quotes as quotation marks",
+		"image": "imageUrl",
+		"question": "Question to be asked?",
+		"answer": {
+			"text": "Full text of the right answer",
+			"patterns": [
+				["groups", "of", "words"],
+				["words", "to", "be", "checked"],
+				["each", "array", "is", "AND"],
+				["but", "array", "to", "each", "other", "is", "OR"]
+			]
+		},
+		"hints": [
+			{
+				"text": "Some text for hint",
+				"image": null
+			},
+			{
+				"text": "If image is a hint - text will be used as a caption for image",
+				"image": "Image relative URL"
+			}
+		]
+	},
+	{
+		"title": "Title text 2",
+		"content": "The whole text of the puzzle (use \n for line breaks) and (') single quotes as quotation marks",
+		"image": null,
+		"question": "Question to be asked?",
+		"answer": {
+			"text": "Full text of the right answer",
+			"patterns": [
+				["groups", "of", "words"],
+				["words", "to", "be", "checked"]
+			]
+		},
+		"hints": [
+			{
+				"text": "Some text for hint",
+				"image": null
+			},
+			{
+				"text": "If image is a hint - text will be used as a caption for image",
+				"image": "Image relative URL"
+			},
+			{
+				"text": "If image is a hint - text will be used as a caption for image",
+				"image": "Image relative URL"
+			}
+		]
+	}
+]
