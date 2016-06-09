@@ -21,7 +21,8 @@ function messageConstructor(bot, id, messageBlock, input, answer) {
         pattern = messageBlock.pattern,
         image = messageBlock.image,
         caption = messageBlock.caption,
-        delay = messageBlock.delay * 1000; // converting to MS from SEC
+        delay = messageBlock.delay * 1000, // converting to MS from SEC
+        delayMessage = messageBlock.delayMessage;
 
     checkInputsOnUserData(id, text, input);
 
@@ -40,6 +41,11 @@ function messageConstructor(bot, id, messageBlock, input, answer) {
             bot.sendMessage(id, text, {parse_mode: 'HTML'});
         } else if (type === 'photo') {
             bot.sendPhoto(id, image, {caption: formatting.parseCurlyBrackets(id, caption)});
+        }
+        if (delay/1000 > 10 && delayMessage) {
+            setTimeout(function(){
+                bot.sendMessage(id, '<b>' + formatting.parseCurlyBrackets(id, delayMessage) + '</b>', {parse_mode: 'HTML'});
+            }, 3000);
         }
     } else {
         user.setTyping(id, true);

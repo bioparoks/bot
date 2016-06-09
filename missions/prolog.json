@@ -8,7 +8,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 6,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -17,7 +18,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 5,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "photo",
@@ -26,7 +28,8 @@
 				"image": "./images/glazok.jpg",
 				"caption": "А вот и мы",
 				"delay": 5,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -35,7 +38,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -58,7 +62,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 3,
-					"pattern": "Кивнуть"
+					"pattern": "Кивнуть",
+					"delayMessage": null
 				},
 				{
 					"type": "text",
@@ -67,7 +72,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 4,
-					"pattern": "Покачать"
+					"pattern": "Покачать",
+					"delayMessage": null
 				}
 			],
 			{
@@ -77,7 +83,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 4,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -86,7 +93,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -105,7 +113,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 3,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -114,7 +123,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 3,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -122,8 +132,9 @@
 				"text": "Странно, ты вроде что-то понятное сказал, но... наверное, перепутал языковой модуль, дай мне минуту",
 				"image": null,
 				"caption": null,
-				"delay": 9,
-				"pattern": null
+				"delay": 20,
+				"pattern": null,
+				"delayMessage": "{{char:tony}} настраивает модуль..."
 			},
 			{
 				"type": "text",
@@ -132,7 +143,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -151,7 +163,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 3,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -160,7 +173,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -183,7 +197,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 5,
-					"pattern": "Да"
+					"pattern": "Да",
+					"delayMessage": null
 				},
 				{
 					"type": "text",
@@ -192,7 +207,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 5,
-					"pattern": "Нет"
+					"pattern": "Нет",
+					"delayMessage": null
 				}
 			],
 			{
@@ -202,7 +218,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 7,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -211,7 +228,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 5,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -220,7 +238,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 10,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -229,7 +248,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 5,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -238,7 +258,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 5,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -247,7 +268,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 8,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -256,7 +278,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 6,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -265,7 +288,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -287,7 +311,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 5,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -296,7 +321,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 6,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -305,7 +331,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 8,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -314,7 +341,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 5,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -323,7 +351,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 2,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -332,7 +361,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 4,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -341,7 +371,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 7,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -350,7 +381,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 2,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -359,7 +391,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 4,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -368,7 +401,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 6,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -377,7 +411,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -401,7 +436,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 4,
-					"pattern": "робот"
+					"pattern": "робот",
+					"delayMessage": null
 				},
 				{
 					"type": "text",
@@ -410,7 +446,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 3,
-					"pattern": "понятно"
+					"pattern": "понятно",
+					"delayMessage": null
 				},
 				{
 					"type": "text",
@@ -419,7 +456,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 2,
-					"pattern": "продолжай"
+					"pattern": "продолжай",
+					"delayMessage": null
 				}
 			],
 			{
@@ -429,7 +467,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 6,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -438,7 +477,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -461,7 +501,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 3,
-					"pattern": "больно"
+					"pattern": "больно",
+					"delayMessage": null
 				},
 				{
 					"type": "text",
@@ -470,7 +511,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 3,
-					"pattern": "тест"
+					"pattern": "тест",
+					"delayMessage": null
 				}
 			],
 			{
@@ -480,7 +522,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -503,7 +546,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 3,
-					"pattern": "погнали"
+					"pattern": "погнали",
+					"delayMessage": null
 				},
 				{
 					"type": "text",
@@ -512,7 +556,8 @@
 					"image": null,
 					"caption": null,
 					"delay": 3,
-					"pattern": "вопросы"
+					"pattern": "вопросы",
+					"delayMessage": null
 				}
 			],
 			{
@@ -522,7 +567,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 9,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -531,7 +577,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -554,7 +601,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 7,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -563,7 +611,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -587,7 +636,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -609,7 +659,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 7,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -618,7 +669,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 4,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -627,7 +679,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
@@ -649,7 +702,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 6,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			},
 			{
 				"type": "text",
@@ -658,7 +712,8 @@
 				"image": null,
 				"caption": null,
 				"delay": 1,
-				"pattern": null
+				"pattern": null,
+				"delayMessage": null
 			}
 		],
 		"answer": {
