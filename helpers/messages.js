@@ -1,9 +1,15 @@
 var async = require('async');
 var user = require('./user');
 var formatting = require('./text-helpers');
+var patterns = require('./patterns');
 
 function checkInputsOnUserData(id, text, input) {
-    if((new RegExp('Это твое имя?')).test(text)) {
+    function checkPattern(pattern, texting) {
+        return pattern.some(function(pat){return new RegExp(pat).test(texting)});
+    }
+
+    // Setting name
+    if (checkPattern(patterns.setName, text)) {
         user.setRoboName(id, input);
     }
 }

@@ -50,33 +50,33 @@ bot.onText(/.*/, function(mes, match){
 
 
     // https://core.telegram.org/bots/api#inlinekeyboardbutton
-    bot.sendMessage(id, '<b>Some text here</b>', {
-        parse_mode: 'HTML',
-        reply_markup: {
-            inline_keyboard: [
-                [
-                    {
-                        text: 'Click me and watch at the TOP',
-                        callback_data: '/start'
-                        // callback_data OR url parameters are required
-                        // at least one of them
-                    }
-                ],
-                [
-                    {
-                        text: 'Some text on the button sndkjas',
-                        callback_data: '/start'
-                    }
-                ],
-                [
-                    {
-                        text: 'This is URL example',
-                        url: 'http://vk.com/'
-                    }
-                ]
-            ]
-        }
-    });
+    //bot.sendMessage(id, '<b>Some text here</b>', {
+    //    parse_mode: 'HTML',
+    //    reply_markup: {
+    //        inline_keyboard: [
+    //            [
+    //                {
+    //                    text: 'Click me and watch at the TOP',
+    //                    callback_data: '/start'
+    //                    // callback_data OR url parameters are required
+    //                    // at least one of them
+    //                }
+    //            ],
+    //            [
+    //                {
+    //                    text: 'Some text on the button sndkjas',
+    //                    callback_data: '/start'
+    //                }
+    //            ],
+    //            [
+    //                {
+    //                    text: 'This is URL example',
+    //                    url: 'http://vk.com/'
+    //                }
+    //            ]
+    //        ]
+    //    }
+    //});
 
 });
 
